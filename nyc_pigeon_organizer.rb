@@ -1,3 +1,8 @@
+require 'pry'
+
 def nyc_pigeon_organizer(data)
-  # write your code here!
+  names = data[:color].values
+  names.flatten!
+  names.uniq!
+  binding.pry
 end
